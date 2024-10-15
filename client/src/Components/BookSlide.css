@@ -1,0 +1,42 @@
+.book-search {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .book-slide {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center; 
+  }
+  
+  .book-slide img {
+    max-width: 100%; 
+    height: auto;    
+  }
+  
+  .book-slide h3 {
+    margin: 10px 0;
+  }
+  
+  .book-slide p {
+    margin: 5px 0;
+  }
+  
+  .book-slide a {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+  }
+  
