@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksFinderApp.API", "BooksFinderApp.API\BooksFinderApp.API.csproj", "{E1DCB6A1-F7F1-42D9-BA72-19CBF96F9AA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksFinderApp.BLL", "BooksFinderApp.BLL\BooksFinderApp.BLL.csproj", "{4EF7E67B-4F0C-4E79-86DB-D79515F993F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksFinderApp.DAL", "BooksFinderApp.DAL\BooksFinderApp.DAL.csproj", "{EBDA3040-4FC8-4B0B-8AC4-3BA792116676}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1DCB6A1-F7F1-42D9-BA72-19CBF96F9AA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E1DCB6A1-F7F1-42D9-BA72-19CBF96F9AA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E1DCB6A1-F7F1-42D9-BA72-19CBF96F9AA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E1DCB6A1-F7F1-42D9-BA72-19CBF96F9AA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EF7E67B-4F0C-4E79-86DB-D79515F993F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EF7E67B-4F0C-4E79-86DB-D79515F993F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EF7E67B-4F0C-4E79-86DB-D79515F993F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EF7E67B-4F0C-4E79-86DB-D79515F993F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBDA3040-4FC8-4B0B-8AC4-3BA792116676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBDA3040-4FC8-4B0B-8AC4-3BA792116676}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBDA3040-4FC8-4B0B-8AC4-3BA792116676}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBDA3040-4FC8-4B0B-8AC4-3BA792116676}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
