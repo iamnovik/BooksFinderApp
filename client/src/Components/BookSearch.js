@@ -7,12 +7,13 @@ const BookSearch = () => {
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const API_BASE_URL='http://localhost:5067/api/books/search';
 
   const handleSearch = async () => {
     setLoading(true);
     setError("");
     try {
-      const response = await axios.get(`http://localhost:5067/api/books/search?query=${query}`);
+      const response = await axios.get(`${API_BASE_URL}?query=${query}`);
       console.log(response.data)
       setBooks(response.data);
     } catch (err) {
