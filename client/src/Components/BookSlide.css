@@ -1,42 +1,67 @@
 .book-search {
-    text-align: center;
-    margin: 20px;
-  }
-  
-  input {
-    padding: 10px;
-    width: 300px;
-    margin-right: 10px;
-  }
-  
-  button {
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  .book-slide {
+  text-align: center;
+  margin: 20px;
+}
+
+input {
+  padding: 10px;
+  width: 300px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.book-slide {
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  transition: height 0.3s ease; /* Анимация изменения высоты */
+}
+
+.book-slide img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.book-slide h3 {
+  margin: 10px 0;
+}
+
+.book-slide p {
+  margin: 5px 0;
+}
+
+.book-slide a {
+  display: block;
+  margin-top: 10px;
+  color: #007bff;
+}
+
+
+
+@media (max-width: 768px) {
+  .slick-slide {
+    height: 500px ; 
     display: flex !important;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    align-items: center; 
-    text-align: center; 
   }
-  
+  .slick-list{
+    height: max-content !important;
+  }
+  .book-slide {
+    height: 100%; 
+  }
+
   .book-slide img {
-    max-width: 100%; 
-    height: auto;    
+    max-height: 300px; 
+    height: 100%; 
   }
-  
-  .book-slide h3 {
-    margin: 10px 0;
-  }
-  
-  .book-slide p {
-    margin: 5px 0;
-  }
-  
-  .book-slide a {
-    display: block;
-    margin-top: 10px;
-    color: #007bff;
-  }
-  
+}
