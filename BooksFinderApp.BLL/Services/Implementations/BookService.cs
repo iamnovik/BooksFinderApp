@@ -11,18 +11,22 @@ public class BookService(IGoogleApiService _googleApiService) : IBookService
     {
         var jsonResult = await _googleApiService.SearchBooksAsync(query);
         var books = JsonConvert.DeserializeObject<GoogleApiResponse>(jsonResult);
-        
         var bookDtos = new List<BookDto>();
         foreach (var item in books.Items)
         {
             bookDtos.Add(new BookDto
             {
                 Title = item.VolumeInfo.Title,
-                Author = string.Join(", ", item.VolumeInfo.Authors),
+                Author = string.Join(", ", 
+                    item.VolumeInfo.Authors?.Select(a => a ?? "Unknown Author") 
+                        .Where(a => a != null) 
+                    ?? new List<string> { "Unknown Author" } 
+                ),
                 PublishedDate = item.VolumeInfo.PublishedDate,
                 PictureUrl = item.VolumeInfo.ImageLinks?.Thumbnail,
                 InfoLink = item.VolumeInfo.InfoLink
             });
+
         }
 
         return bookDtos;
